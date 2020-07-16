@@ -5,15 +5,15 @@
 
 from odoo import fields, models
 
+_LINK_TYPE_SELECTION = [
+    ('cross_sell', 'Cross-Sell'),
+    ('up_sell', 'Up-Sell'),
+]
+
 
 class ProductTemplateLink(models.Model):
     _name = 'product.template.link'
     _order = 'product_template_id, linked_product_template_id'
-
-    _LINK_TYPE_SELECTION = [
-        ('cross_sell', 'Cross-Sell'),
-        ('up_sell', 'Up-Sell'),
-    ]
 
     product_template_id = fields.Many2one(
         string='Source Product', comodel_name='product.template',
