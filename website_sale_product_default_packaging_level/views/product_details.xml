@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 ACSONE SA/NV
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).-->
+<odoo>
+    <template id="product" inherit_id="website_sale.product">
+        <div id="o_wsale_cta_wrapper" position="after">
+            <div>
+                Packaging: <span t-out="product.from_default_level_packaging_id.name" />
+            </div>
+        </div>
+    </template>
+</odoo>
