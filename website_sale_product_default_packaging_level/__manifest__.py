@@ -13,6 +13,12 @@
     "depends": [
         "website_sale",
         "product_packaging_level",
+        "sale_product_default_packaging_level",
     ],
     "data": ["views/product_details.xml"],
+    "assets": {
+        "web.assets_frontend": [
+            "website_sale_product_default_packaging_level/static/src/**/*",
+        ],
+    },
 }
